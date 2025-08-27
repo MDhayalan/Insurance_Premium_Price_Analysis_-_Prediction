@@ -55,14 +55,14 @@ col1, col2 = st.columns(2)
 
 with col1:
     age = st.number_input("Age", min_value=1, max_value=100, value=1)
-    height = st.number_input("Height (m)", min_value=1.0, max_value=2.5, value=1.0)
+    height = st.number_input("Height (m)", min_value=1.0, max_value=2.5, value=1)
     diabetes = st.radio("Diabetes", ["Yes", "No"], horizontal=True)
     bp = st.radio("Blood Pressure Problems", ["Yes", "No"], horizontal=True)
     transplant = st.radio("Any Transplants?", ["Yes", "No"], horizontal=True)
     
 
 with col2:
-    weight = st.number_input("Weight (Kg)", min_value=1.0, max_value=150.0, value=1.0)
+    weight = st.number_input("Weight (Kg)", min_value=1.0, max_value=150.0, value=1)
     bmi = weight / (height**2)
     NumberOfMajorSurgeries = st.number_input("Number Of Major Surgeries", min_value=0, max_value=10, value=0)
     chronic = st.radio("Any Chronic Diseases? ", ["Yes", "No"], horizontal=True)
@@ -107,3 +107,4 @@ st.markdown("""
         🔗 Profile: <a href="https://mdhayalan.github.io/" style="color:#150ee8;">Click Here</a>
     </div>
 """, unsafe_allow_html=True)
+
